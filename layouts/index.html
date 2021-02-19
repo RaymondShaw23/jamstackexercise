@@ -2,6 +2,7 @@
   <body>
     <div id="blog">
       {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
       {{ partial "post/header-cover.html" . }}
       <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
         class="{{ with .Params.coverimage }}hasCover{{ end }}
